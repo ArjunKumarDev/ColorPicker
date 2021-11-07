@@ -1,0 +1,162 @@
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .header__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  input {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .button {
+    margin-top: 1.5rem;
+  }
+  .pallate__grid {
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0.2rem;
+
+    &-item {
+      height: 200px;
+      width: 130px;
+
+      div {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 575px) {
+  .header__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .button {
+    margin-top: 1.5rem;
+  }
+
+  .pallate__grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    &-item {
+      height: 200px;
+      width: 180px;
+
+      div {
+        position: absolute;
+        right: 0;
+        left: 0;
+        padding-bottom: 0.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 425px) {
+  .header__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .button {
+    margin-top: 1.5rem;
+  }
+
+  .pallate__grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    &-item {
+      width: 150px;
+
+      div {
+        position: absolute;
+        right: 0;
+        left: 0;
+        padding-bottom: 0.9rem;
+      }
+    }
+  }
+}
+
+// For Medium devices
+@media screen and (min-width: 576px) {
+  .header__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .pallate__grid {
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1.5rem;
+
+    &-item {
+      height: 200px;
+      width: 150px;
+
+      div {
+        font-size: 1rem;
+        text-align: center;
+        // padding: 1rem 1.5rem;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+// For Medium devices
+@media screen and (min-width: 767px) {
+  .pallate__grid {
+    grid-template-columns: repeat(4, 1fr);
+
+    &-item {
+      height: 300px;
+      width: 160px;
+
+      div {
+        font-size: 1rem;
+        text-align: center;
+        // padding: 1rem 1.5rem;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: auto;
+  }
+
+  .pallate__grid {
+    &-item {
+      height: 300px;
+      width: 200px;
+    }
+  }
+}
