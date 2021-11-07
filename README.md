@@ -22,7 +22,9 @@ How to use?
 
 ### `Enter color name or related words based on color (EG:"Green","Forest","Coffee") and hit search button or Enter key`
 
-!Image https://i.ibb.co/2tvYByj/Capture.png
+Normal Mode:
+
+!Image https://imgur.com/a/DdpQLuF
 
 Technologies used:
 
